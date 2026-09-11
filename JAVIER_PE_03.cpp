@@ -1,3 +1,4 @@
+// Exercise Q03 — Triangle Outline  [Easy] 
 #include <GL/glut.h>
 
 void display()

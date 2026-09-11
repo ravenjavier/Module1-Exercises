@@ -1,3 +1,4 @@
+// Exercise Q01 — Red Center Point  [Easy] 
 #include <GL/glut.h>
 
 void display()

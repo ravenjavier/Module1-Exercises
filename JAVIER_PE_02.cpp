@@ -1,3 +1,4 @@
+// Exercise Q02 — Horizontal Green Line  [Easy] 
 #include <GL/glut.h>
 
 void display()
