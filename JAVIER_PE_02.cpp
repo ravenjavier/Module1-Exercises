@@ -3,31 +3,36 @@
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glPointSize(15.0f);
-    glColor3f(1.0f, 0.0f, 0.0f);
+    glColor3f(0.0f, 1.0f, 0.0f);
+    glLineWidth(4.0f);
 
-    glBegin(GL_POINTS);
-    glVertex2f(0.0f, 0.0f);
-
+    glBegin(GL_LINES);
+        glVertex2f(-0.8f, 0.0f);
+        glVertex2f(0.8f, 0.0f);
     glEnd();
+
     glFlush();
 }
 
 void init()
 {
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
+
     gluOrtho2D(-1.0, 1.0, -1.0, 1.0);
 }
 
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(600, 600);
 
-    glutCreateWindow("Exercise Q01 - Red Center Point");
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitWindowSize(800, 600);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow("Exercise Q02 - Horizontal Green Line");
+
     init();
 
     glutDisplayFunc(display);
