@@ -46,7 +46,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 
     glutInitWindowSize(800, 600);
-    glutCreateWindow("Q13 - Letter F from Rectangles");
+    glutCreateWindow("Exercise Q13 - Letter F from Rectangles");
 
     init();
 

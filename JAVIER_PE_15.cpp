@@ -83,7 +83,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 
     glutInitWindowSize(800, 600);
-    glutCreateWindow("Q15 - Move Square with Arrow Keys");
+    glutCreateWindow("Exercise Q15 - Move Square with Arrow Keys");
 
     init();
 
