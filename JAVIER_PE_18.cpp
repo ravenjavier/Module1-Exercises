@@ -5,7 +5,6 @@
 #else
 #include <GL/glut.h>
 #endif
-#include <GL/glut.h>
 #include <iostream>
 #include <cmath>
 using namespace std;
