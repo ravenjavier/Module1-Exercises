@@ -1,4 +1,10 @@
 // Exercise Q19 — Keyboard Color Picker  [Hard] 
+#define GL_SILENCE_DEPRECATION
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
+#include <GL/glut.h>
+#endif
 #include <GL/glut.h>
 #include <iostream>
 #include <cstdlib>

@@ -1,6 +1,14 @@
 // Exercise Q17 — Traffic Light Simulator  [Hard] 
+#define GL_SILENCE_DEPRECATION
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif
+#include <GL/glut.h>
+#include <iostream>
 #include <cmath>
+using namespace std;
 
 int state = 0;
 

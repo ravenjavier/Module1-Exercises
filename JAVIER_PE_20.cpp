@@ -1,6 +1,14 @@
 // Exercise Q20 — Procedural Striped Flag with Star (Capstone)  [Hard] 
+#define GL_SILENCE_DEPRECATION
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif
+#include <GL/glut.h>
+#include <iostream>
 #include <cmath>
+using namespace std;
 
 // configuration
 const int WINDOW_WIDTH = 800;

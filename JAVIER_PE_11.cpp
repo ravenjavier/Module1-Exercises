@@ -1,6 +1,14 @@
 // Exercise Q11 — Concentric Circles  [Medium] 
+#define GL_SILENCE_DEPRECATION
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif
+#include <GL/glut.h>
+#include <iostream>
 #include <cmath>
+using namespace std;
 
 const float PI = 3.14159265358979323846f;
 

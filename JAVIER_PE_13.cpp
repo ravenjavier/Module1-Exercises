@@ -1,5 +1,13 @@
 // Exercise Q13 — Letter "F" from Rectangles  [Medium] 
+#define GL_SILENCE_DEPRECATION
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif
+#include <GL/glut.h>
+#include <iostream>
+using namespace std;
 
 void drawRect(float x0, float y0, float x1, float y1)
 {
